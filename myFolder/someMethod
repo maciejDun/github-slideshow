@@ -1,0 +1,11 @@
+    public static int[] minMax(int[] arr) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (int value : arr){
+            if (value >= max) max = value;
+            if (value <= min) min = value;
+        }
+        System.out.println(min);
+        System.out.println(max);
+        return new int[] {min, max};
+    }
